@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!-- AndroidManifest.xml 文件，定义应用程序的配置信息 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AnimationStudy"
+        tools:targetApi="31">  <!-- 指定工具的目标API版本 -->
+
+        <!-- 主活动配置 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">  <!-- 允许外部调用该Activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />  <!-- 主活动入口 -->
+                <category android:name="android.intent.category.LAUNCHER" />  <!-- 设置为启动器，即应用启动时首先打开的Activity -->
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

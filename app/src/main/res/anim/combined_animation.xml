@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    令人惊艳的组合动画: 平移、缩放和透明度变化
+
+    这个动画将在1秒的时间内完成以下三个效果：
+    1. 平移: 控件从当前位置水平移动到右侧50%的位置。
+    2. 缩放: 控件在水平和垂直方向上同时放大到原始大小的1.5倍。
+    3. 透明度变化: 控件从完全不透明渐变为半透明。
+-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 平移动画 -->
+    <translate
+        android:duration="2000"
+        android:fromXDelta="0%p"
+        android:toXDelta="50%p" />  <!-- 动画持续时间：2000毫秒（2秒） -->
+
+    <!-- 缩放动画 -->
+    <scale
+        android:duration="2000"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="1.5"
+        android:toYScale="1.5" />  <!-- 动画持续时间：2000毫秒（2秒） -->
+
+    <!-- 透明度变化动画 -->
+    <alpha
+        android:duration="2000"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.5" />  <!-- 动画持续时间：2000毫秒（2秒） -->
+</set>

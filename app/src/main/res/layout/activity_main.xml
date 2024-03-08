@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    带有约束布局的XML文件，包含按钮和用于帧动画的图片视图
+    使用了androidx库中的ConstraintLayout
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 按钮 -->
+    <Button
+        android:id="@+id/btnAnimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:onClick="startAnimation"
+        android:text="执行动画组合"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />  <!-- 按钮点击事件的处理方法为startAnimation -->
+
+    <!-- 图片视图，用于帧动画 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAnimate" />  <!-- 初始时设置图片视图不可见 -->
+</androidx.constraintlayout.widget.ConstraintLayout>

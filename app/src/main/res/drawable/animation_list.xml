@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    这个XML文件定义了一个用于Android的动画列表。
+    该动画旨在无限循环，每个帧的持续时间为500毫秒。
+-->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <!-- 第1帧：显示drawable "one"，持续时间500毫秒 -->
+    <item android:drawable="@drawable/one" android:duration="500"/>
+
+    <!-- 第2帧：显示drawable "two"，持续时间500毫秒 -->
+    <item android:drawable="@drawable/two" android:duration="500"/>
+
+    <!-- 第3帧：显示drawable "three"，持续时间500毫秒 -->
+    <item android:drawable="@drawable/three" android:duration="500"/>
+
+    <!-- 第4帧：显示drawable "four"，持续时间500毫秒 -->
+    <item android:drawable="@drawable/four" android:duration="500"/>
+
+    <!-- 第5帧：显示drawable "five"，持续时间500毫秒 -->
+    <item android:drawable="@drawable/five" android:duration="500"/>
+
+    <!-- 第6帧：显示drawable "six"，持续时间500毫秒 -->
+    <item android:drawable="@drawable/six" android:duration="500"/>
+
+    <!-- 第7帧：显示drawable "seven"，持续时间500毫秒 -->
+    <item android:drawable="@drawable/seven" android:duration="500"/>
+</animation-list>
